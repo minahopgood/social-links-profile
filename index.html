@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      html {
+        font-size: 0.9em;
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 100%);
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .social-card {
+        background-color: hsl(0, 0%, 12%);
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* horizontal */
+        align-items: center; /* vertical */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border-radius: 0.5em;
+      }
+
+      .img {
+        border-radius: 100%;
+        width: 5rem;
+        margin-top: 1rem;
+      }
+
+      .name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+      .location {
+        color: hsl(75, 94%, 57%);
+      }
+      .tagline {
+        font-size: 0.9rem;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        border-radius: 1rem;
+        font-weight: 700;
+        padding-bottom: 0.8rem;
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: hsl(0, 0%, 20%);
+        width: 18rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+      }
+
+      a {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+      }
+
+      .link:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 20%);
+      }
+
+      a:focus-within {
+        background-color: hsl(75, 94%, 57%);
+        outline: transparent;
+        border-radius: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-card">
+      <div class="about-me">
+        <img
+          class="img"
+          src="./assets/images/avatar-jessica.jpeg"
+          alt="Jessicsa Randall image"
+        />
+        <p class="name">Jessica Randall</p>
+        <p class="location">London, United Kingdom</p>
+        <p class="tagline">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="links">
+        <a href="https://www.frontendmentor.io/" target="_blank"
+          ><div class="link git">GitHub</div></a
+        >
+        <a href="https://www.frontendmentor.io/" target="_blank"
+          ><div class="link frontend">Frontend Mentor</div></a
+        >
+        <a href="https://www.frontendmentor.io/" target="_blank"
+          ><div class="link linkedin">LinkedIn</div></a
+        >
+        <a href="https://www.frontendmentor.io/" target="_blank"
+          ><div class="link twitter">Twitter</div></a
+        >
+        <a href="https://www.frontendmentor.io/" target="_blank"
+          ><div class="link insta">Instagram</div></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
